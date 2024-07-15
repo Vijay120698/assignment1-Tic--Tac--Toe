@@ -1,0 +1,62 @@
+
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#game {
+    text-align: center;
+    width: fit-content;
+    padding-block: 26px;
+    padding-left: 29%;
+
+}
+.login__bg {
+    position: fixed; /* Fix the background image to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire viewport width */
+    height: 100%; /* Cover the entire viewport height */
+    object-fit: cover;
+    object-position: center;
+    z-index: -1; /* Ensure the background is behind other content */
+}
+.board { background-color: rgb(179, 131, 71);
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 33px 38px rgba(232, 230, 230, 0.75);
+    justify-content: center;   border-radius: 30px;
+}
+
+#main{
+   display: flex;
+   flex-direction: column;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 30px;
+   
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+#status{
+    color: rgb(255, 255, 255);
+   font-size: 100px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bold;
+}
